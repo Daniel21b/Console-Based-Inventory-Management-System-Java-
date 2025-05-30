@@ -60,6 +60,17 @@ This inventory management system is designed to meet the demands of small to med
    mvn clean package
    java --module-path /path/to/javafx/lib --add-modules javafx.controls,javafx.fxml -jar target/inventory-management-system-1.0.0.jar
    ```
+   <img width="1200" alt="Screenshot 2025-05-29 at 10 13 29 PM" src="https://github.com/user-attachments/assets/4fb05526-776d-446a-af5a-ce5a33cfc6cf" />
+
+   <img width="1204" alt="Screenshot 2025-05-29 at 10 13 55 PM" src="https://github.com/user-attachments/assets/56d4909f-8545-47c0-8e20-0e15cfdd058c" />
+
+   <img width="1196" alt="Screenshot 2025-05-29 at 10 14 17 PM" src="https://github.com/user-attachments/assets/f417ce7e-d978-4457-a8b5-cce07d9c46ad" />
+
+   <img width="1191" alt="Screenshot 2025-05-29 at 10 13 40 PM" src="https://github.com/user-attachments/assets/391b5133-287a-4634-b53c-94176d7ce8bf" />
+
+
+
+
 
 ### Quick Start
 The application comes pre-loaded with sample data:
@@ -243,7 +254,7 @@ The system produces a self-contained JAR file that can be deployed on any system
 - Use the existing architectural patterns
 - Optimize for performance where applicable
 
-## 📄 License<img width="1196" alt="Screenshot 2025-05-29 at 10 14 17 PM" src="https://github.com/user-attachments/assets/5276dba1-7325-4e0d-a4ef-bd2aab19b2c0" />
+## 📄 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
