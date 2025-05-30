@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns="http://javafx.com/javafx/21.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.inventory.controller.ReportController">
+   <children>
+      <!-- Module Header -->
+      <HBox alignment="CENTER_LEFT" styleClass="module-header">
+         <children>
+            <Label styleClass="module-title" text="Reports and Analytics">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Region HBox.hgrow="ALWAYS" />
+            <Button fx:id="exportButton" styleClass="action-button" text="Export Data" />
+            <Button fx:id="refreshButton" styleClass="primary-button" text="Refresh" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+         </padding>
+      </HBox>
+
+      <!-- KPIs Section -->
+      <VBox styleClass="kpi-section">
+         <children>
+            <Label styleClass="section-title" text="Key Performance Indicators">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </Label>
+            
+            <!-- KPI Grid -->
+            <GridPane hgap="20.0" vgap="20.0">
+               <children>
+                  <!-- Total Inventory Value -->
+                  <VBox alignment="CENTER" styleClass="kpi-card" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                     <children>
+                        <Label styleClass="kpi-label" text="Total Inventory Value">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="totalInventoryValueLabel" styleClass="kpi-value" text="0.00">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" styleClass="kpi-card" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                     <children>
+                        <Label styleClass="kpi-label" text="Total Order Value">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="totalOrderValueLabel" styleClass="kpi-value" text="0.00">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" styleClass="kpi-card" GridPane.columnIndex="2" GridPane.rowIndex="0">
+                     <children>
+                        <Label styleClass="kpi-label" text="Total Products">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="totalProductCountLabel" styleClass="kpi-value" text="0">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  
+                  <!-- Row 2 -->
+                  <VBox alignment="CENTER" styleClass="kpi-card" GridPane.columnIndex="0" GridPane.rowIndex="1">
+                     <children>
+                        <Label styleClass="kpi-label" text="Total Orders">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="totalOrderCountLabel" styleClass="kpi-value" text="0">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" styleClass="kpi-card" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <Label styleClass="kpi-label" text="Active Suppliers">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="totalSupplierCountLabel" styleClass="kpi-value" text="0">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" styleClass="kpi-card-warning" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <children>
+                        <Label styleClass="kpi-label" text="Low Stock Items">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lowStockCountLabel" styleClass="kpi-value-warning" text="0">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+         </children>
+         <VBox.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" />
+         </VBox.margin>
+      </VBox>
+
+      <!-- Analytics Section -->
+      <HBox VBox.vgrow="ALWAYS">
+         <children>
+            <!-- Category Breakdown -->
+            <VBox HBox.hgrow="ALWAYS" styleClass="analytics-section">
+               <children>
+                  <Label styleClass="section-title" text="Product Category Analysis">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="categoryBreakdownArea" editable="false" VBox.vgrow="ALWAYS" wrapText="true">
+                     <font>
+                        <Font family="Courier New" size="11.0" />
+                     </font>
+                  </TextArea>
+               </children>
+            </VBox>
+            
+            <!-- Executive Summary -->
+            <VBox HBox.hgrow="ALWAYS" styleClass="analytics-section">
+               <children>
+                  <Label styleClass="section-title" text="Executive Summary">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="summaryArea" editable="false" VBox.vgrow="ALWAYS" wrapText="true">
+                     <font>
+                        <Font family="Courier New" size="11.0" />
+                     </font>
+                  </TextArea>
+               </children>
+            </VBox>
+         </children>
+         <VBox.margin>
+            <Insets left="20.0" right="20.0" top="10.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox> 

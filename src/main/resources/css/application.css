@@ -1,0 +1,541 @@
+/* Application-wide styles for Inventory Management System */
+
+.root {
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+    -fx-background-color: #f5f5f5;
+}
+
+/* Header styles */
+.header {
+    -fx-background-color: linear-gradient(to bottom, #2c3e50, #34495e);
+    -fx-text-fill: white;
+}
+
+.title {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 24px;
+}
+
+.stats {
+    -fx-text-fill: #ecf0f1;
+    -fx-font-size: 14px;
+}
+
+/* Dashboard styles */
+.dashboard-title {
+    -fx-text-fill: #2c3e50;
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+    -fx-padding: 0 0 20 0;
+}
+
+/* Module Header Styles */
+.module-header {
+    -fx-background-color: #ecf0f1;
+    -fx-border-color: #bdc3c7;
+    -fx-border-width: 0 0 1 0;
+    -fx-padding: 15 20 15 20;
+}
+
+.module-title {
+    -fx-text-fill: #2c3e50;
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+}
+
+.section-title {
+    -fx-text-fill: #2c3e50;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-padding: 0 0 10 0;
+}
+
+/* Tab styles */
+.tab-pane {
+    -fx-background-color: white;
+}
+
+.tab {
+    -fx-background-color: #ecf0f1;
+    -fx-text-fill: #2c3e50;
+    -fx-font-weight: bold;
+}
+
+.tab:selected {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+}
+
+.tab:hover {
+    -fx-background-color: #bdc3c7;
+}
+
+.tab-content-area {
+    -fx-background-color: white;
+    -fx-padding: 20;
+}
+
+/* Footer styles */
+.footer {
+    -fx-background-color: #95a5a6;
+    -fx-text-fill: #2c3e50;
+}
+
+/* Button styles */
+.button {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+    -fx-padding: 8 16 8 16;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #2980b9;
+}
+
+.button:pressed {
+    -fx-background-color: #21618c;
+}
+
+/* Primary button variant */
+.button-primary, .primary-button {
+    -fx-background-color: #27ae60;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+    -fx-padding: 8 16 8 16;
+    -fx-cursor: hand;
+}
+
+.button-primary:hover, .primary-button:hover {
+    -fx-background-color: #229954;
+}
+
+/* Action button variant */
+.action-button {
+    -fx-background-color: #f39c12;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+    -fx-padding: 8 16 8 16;
+    -fx-cursor: hand;
+}
+
+.action-button:hover {
+    -fx-background-color: #e67e22;
+}
+
+/* Secondary button variant */
+.button-secondary {
+    -fx-background-color: #95a5a6;
+    -fx-text-fill: #2c3e50;
+}
+
+.button-secondary:hover {
+    -fx-background-color: #7f8c8d;
+}
+
+/* Danger button variant */
+.button-danger {
+    -fx-background-color: #e74c3c;
+}
+
+.button-danger:hover {
+    -fx-background-color: #c0392b;
+}
+
+/* Text field styles */
+.text-field {
+    -fx-background-color: white;
+    -fx-border-color: #bdc3c7;
+    -fx-border-radius: 3;
+    -fx-padding: 8 12 8 12;
+}
+
+.text-field:focused {
+    -fx-border-color: #3498db;
+    -fx-border-width: 2;
+}
+
+/* Table styles */
+.table-view {
+    -fx-background-color: white;
+    -fx-border-color: #bdc3c7;
+    -fx-border-width: 1;
+}
+
+.table-view .column-header {
+    -fx-background-color: #ecf0f1;
+    -fx-text-fill: #2c3e50;
+    -fx-font-weight: bold;
+    -fx-border-color: #bdc3c7;
+}
+
+.table-view .table-row-cell {
+    -fx-border-color: transparent #bdc3c7 #bdc3c7 transparent;
+    -fx-border-width: 0.5;
+}
+
+.table-view .table-row-cell:selected {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+}
+
+.table-view .table-row-cell:hover {
+    -fx-background-color: #ecf0f1;
+}
+
+/* Label styles */
+.label {
+    -fx-text-fill: #2c3e50;
+}
+
+.label-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+}
+
+.label-subtitle {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #7f8c8d;
+}
+
+.label-success {
+    -fx-text-fill: #27ae60;
+    -fx-font-weight: bold;
+}
+
+.label-warning {
+    -fx-text-fill: #f39c12;
+    -fx-font-weight: bold;
+}
+
+.label-danger {
+    -fx-text-fill: #e74c3c;
+    -fx-font-weight: bold;
+}
+
+/* KPI Dashboard Styles */
+.kpi-section {
+    -fx-background-color: white;
+    -fx-border-color: #bdc3c7;
+    -fx-border-width: 0 0 1 0;
+    -fx-padding: 20;
+}
+
+.kpi-card {
+    -fx-background-color: white;
+    -fx-border-color: #bdc3c7;
+    -fx-border-width: 1;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 20;
+    -fx-alignment: center;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 8, 0, 0, 2);
+}
+
+.kpi-card:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.15), 12, 0, 0, 4);
+}
+
+.kpi-card-warning {
+    -fx-background-color: #fef9e7;
+    -fx-border-color: #f39c12;
+    -fx-border-width: 2;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 20;
+    -fx-alignment: center;
+    -fx-effect: dropshadow(three-pass-box, rgba(243,156,18,0.2), 8, 0, 0, 2);
+}
+
+.kpi-label {
+    -fx-text-fill: #7f8c8d;
+    -fx-font-size: 12px;
+    -fx-font-weight: normal;
+    -fx-padding: 0 0 5 0;
+}
+
+.kpi-value {
+    -fx-text-fill: #2c3e50;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+.kpi-value-warning {
+    -fx-text-fill: #f39c12;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+/* Analytics Section Styles */
+.analytics-section {
+    -fx-background-color: white;
+    -fx-border-color: #bdc3c7;
+    -fx-border-width: 1;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 20;
+    -fx-spacing: 10;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 5, 0, 0, 2);
+}
+
+/* Card-like container styles */
+.card {
+    -fx-background-color: white;
+    -fx-border-color: #bdc3c7;
+    -fx-border-width: 1;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 20;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 5, 0, 0, 2);
+}
+
+/* Toolbar Styles */
+.toolbar {
+    -fx-background-color: #ecf0f1;
+    -fx-border-color: #bdc3c7;
+    -fx-border-width: 0 0 1 0;
+    -fx-padding: 10 20 10 20;
+    -fx-spacing: 10;
+}
+
+/* Search Box Styles */
+.search-box {
+    -fx-background-color: white;
+    -fx-border-color: #3498db;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-padding: 8 15 8 15;
+    -fx-pref-width: 200;
+}
+
+.search-box:focused {
+    -fx-border-color: #2980b9;
+    -fx-border-width: 2;
+}
+
+/* Filter Styles */
+.filter-box {
+    -fx-background-color: white;
+    -fx-border-color: #bdc3c7;
+    -fx-border-radius: 3;
+    -fx-padding: 8 12 8 12;
+    -fx-pref-width: 120;
+}
+
+/* Menu styles */
+.menu-bar {
+    -fx-background-color: #34495e;
+}
+
+.menu {
+    -fx-text-fill: white;
+}
+
+.menu:hover {
+    -fx-background-color: #2c3e50;
+}
+
+.context-menu {
+    -fx-background-color: white;
+    -fx-border-color: #bdc3c7;
+    -fx-border-width: 1;
+}
+
+.menu-item {
+    -fx-text-fill: #2c3e50;
+}
+
+.menu-item:hover {
+    -fx-background-color: #ecf0f1;
+}
+
+/* Progress indicator styles */
+.progress-bar {
+    -fx-background-color: #ecf0f1;
+}
+
+.progress-bar .bar {
+    -fx-background-color: #3498db;
+    -fx-background-insets: 0;
+    -fx-background-radius: 3;
+}
+
+/* Scroll bar styles */
+.scroll-bar:horizontal, .scroll-bar:vertical {
+    -fx-background-color: #ecf0f1;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #95a5a6;
+    -fx-background-radius: 5;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: #7f8c8d;
+}
+
+/* Status indicators */
+.status-low-stock {
+    -fx-background-color: #e74c3c;
+    -fx-text-fill: white;
+    -fx-background-radius: 3;
+    -fx-padding: 2 6 2 6;
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+}
+
+.status-in-stock {
+    -fx-background-color: #27ae60;
+    -fx-text-fill: white;
+    -fx-background-radius: 3;
+    -fx-padding: 2 6 2 6;
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+}
+
+.status-out-of-stock {
+    -fx-background-color: #95a5a6;
+    -fx-text-fill: white;
+    -fx-background-radius: 3;
+    -fx-padding: 2 6 2 6;
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+}
+
+/* Chart styles */
+.chart {
+    -fx-background-color: white;
+    -fx-border-color: #bdc3c7;
+    -fx-border-width: 1;
+    -fx-border-radius: 5;
+}
+
+.chart-title {
+    -fx-text-fill: #2c3e50;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}
+
+.chart-legend {
+    -fx-background-color: #ecf0f1;
+}
+
+/* Form Styles */
+.form-container {
+    -fx-background-color: white;
+    -fx-padding: 20;
+    -fx-spacing: 15;
+}
+
+.form-row {
+    -fx-spacing: 10;
+    -fx-alignment: center-left;
+}
+
+.form-label {
+    -fx-text-fill: #2c3e50;
+    -fx-font-weight: bold;
+    -fx-min-width: 120;
+}
+
+/* Dialog Styles */
+.dialog-header {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-padding: 15;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}
+
+.dialog-content {
+    -fx-background-color: white;
+    -fx-padding: 20;
+    -fx-spacing: 15;
+}
+
+/* Performance optimizations */
+.text {
+    -fx-smooth: false;
+}
+
+.shape {
+    -fx-smooth: false;
+}
+
+/* Additional Missing CSS Classes */
+.filter-section {
+    -fx-background-color: #f8f9fa;
+    -fx-border-color: #bdc3c7;
+    -fx-border-width: 0 0 1 0;
+    -fx-padding: 15 20 15 20;
+    -fx-spacing: 10;
+}
+
+.stats-section {
+    -fx-background-color: #ecf0f1;
+    -fx-border-color: #bdc3c7;
+    -fx-border-width: 0 0 1 0;
+    -fx-padding: 10 20 10 20;
+    -fx-spacing: 15;
+}
+
+.stat-label {
+    -fx-text-fill: #2c3e50;
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+}
+
+.action-section {
+    -fx-background-color: #f8f9fa;
+    -fx-border-color: #bdc3c7;
+    -fx-border-width: 1 0 0 0;
+    -fx-padding: 15 20 15 20;
+    -fx-spacing: 10;
+}
+
+/* Info and Danger Button Variants */
+.info-button {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+    -fx-padding: 8 16 8 16;
+    -fx-cursor: hand;
+}
+
+.info-button:hover {
+    -fx-background-color: #2980b9;
+}
+
+.danger-button {
+    -fx-background-color: #e74c3c;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+    -fx-padding: 8 16 8 16;
+    -fx-cursor: hand;
+}
+
+.danger-button:hover {
+    -fx-background-color: #c0392b;
+}
+
+.secondary-button {
+    -fx-background-color: #95a5a6;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+    -fx-padding: 8 16 8 16;
+    -fx-cursor: hand;
+}
+
+.secondary-button:hover {
+    -fx-background-color: #7f8c8d;
+} 

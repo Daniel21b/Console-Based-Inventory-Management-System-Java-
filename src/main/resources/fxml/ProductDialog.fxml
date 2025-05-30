@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox xmlns="http://javafx.com/javafx/21.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.inventory.controller.ProductDialogController">
+   <children>
+      <!-- Header -->
+      <Label styleClass="dialog-title" text="Product Information">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      
+      <!-- Form Content -->
+      <ScrollPane fitToWidth="true" VBox.vgrow="ALWAYS">
+         <content>
+            <GridPane hgap="10.0" vgap="10.0">
+              <columnConstraints>
+                <ColumnConstraints minWidth="120.0" prefWidth="120.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="200.0" />
+                <ColumnConstraints minWidth="80.0" prefWidth="80.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="30.0" />
+                <RowConstraints minHeight="30.0" />
+                <RowConstraints minHeight="30.0" />
+                <RowConstraints minHeight="30.0" />
+                <RowConstraints minHeight="30.0" />
+                <RowConstraints minHeight="30.0" />
+                <RowConstraints minHeight="30.0" />
+                <RowConstraints minHeight="30.0" />
+                <RowConstraints minHeight="30.0" />
+                <RowConstraints minHeight="30.0" />
+                <RowConstraints minHeight="60.0" />
+                <RowConstraints minHeight="30.0" />
+                <RowConstraints minHeight="30.0" />
+                <RowConstraints minHeight="30.0" />
+              </rowConstraints>
+               <children>
+                  <!-- Product Name -->
+                  <Label text="Name*:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                  <TextField fx:id="nameField" promptText="Enter product name" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="0" />
+                  
+                  <!-- Category -->
+                  <Label text="Category*:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                  <ComboBox fx:id="categoryComboBox" maxWidth="1.7976931348623157E308" promptText="Select category" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+                  
+                  <!-- Price and Cost -->
+                  <Label text="Price*:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                  <TextField fx:id="priceField" promptText="0.00" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label text="Cost:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                  <TextField fx:id="costField" promptText="0.00" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  
+                  <!-- Quantity and Reorder Point -->
+                  <Label text="Quantity*:" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                  <TextField fx:id="quantityField" promptText="0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Label text="Reorder Point:" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+                  <TextField fx:id="reorderPointField" promptText="10" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  
+                  <!-- Supplier -->
+                  <Label text="Supplier:" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+                  <ComboBox fx:id="supplierComboBox" maxWidth="1.7976931348623157E308" promptText="Select supplier" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="6" />
+                  
+                  <!-- Barcode and SKU -->
+                  <Label text="Barcode:" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+                  <TextField fx:id="barcodeField" promptText="Product barcode" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <Button onAction="#handleGenerateBarcode" text="Generate" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                  
+                  <Label text="SKU:" GridPane.columnIndex="0" GridPane.rowIndex="8" />
+                  <TextField fx:id="skuField" promptText="Stock keeping unit" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                  <Button onAction="#handleGenerateSku" text="Generate" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                  
+                  <!-- Weight and Dimensions -->
+                  <Label text="Weight (kg):" GridPane.columnIndex="0" GridPane.rowIndex="9" />
+                  <TextField fx:id="weightField" promptText="0.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                  
+                  <Label text="Dimensions:" GridPane.columnIndex="0" GridPane.rowIndex="10" />
+                  <TextField fx:id="dimensionsField" promptText="L x W x H (cm)" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="10" />
+                  
+                  <!-- Description -->
+                  <Label text="Description:" GridPane.columnIndex="0" GridPane.rowIndex="11" GridPane.valignment="TOP" />
+                  <TextArea fx:id="descriptionArea" maxHeight="80.0" minHeight="80.0" promptText="Product description..." wrapText="true" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="11" />
+                  
+                  <!-- Status Checkboxes -->
+                  <Label text="Status:" GridPane.columnIndex="0" GridPane.rowIndex="12" />
+                  <HBox spacing="20.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="12">
+                     <children>
+                        <CheckBox fx:id="activeCheckBox" text="Active" />
+                        <CheckBox fx:id="taxableCheckBox" text="Taxable" />
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </GridPane>
+         </content>
+      </ScrollPane>
+      
+      <!-- Buttons -->
+      <HBox alignment="CENTER_RIGHT" spacing="10.0">
+         <children>
+            <Button onAction="#handleCancel" styleClass="secondary-button" text="Cancel" />
+            <Button onAction="#handleOk" styleClass="primary-button" text="OK" />
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox> 
