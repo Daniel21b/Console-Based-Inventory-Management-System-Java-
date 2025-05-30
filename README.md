@@ -243,7 +243,7 @@ The system produces a self-contained JAR file that can be deployed on any system
 - Use the existing architectural patterns
 - Optimize for performance where applicable
 
-## 📄 License
+## 📄 License<img width="1196" alt="Screenshot 2025-05-29 at 10 14 17 PM" src="https://github.com/user-attachments/assets/5276dba1-7325-4e0d-a4ef-bd2aab19b2c0" />
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
